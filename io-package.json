@@ -1,0 +1,102 @@
+{
+    "common": {
+        "name": "firebase",
+        "version": "0.0.1",
+        "news": {
+            "0.0.1": {
+                "en": "initial release",
+                "de": "Erstveröffentlichung",
+                "ru": "Начальная версия",
+                "pt": "lançamento inicial",
+                "nl": "Eerste uitgave",
+                "fr": "Première version",
+                "it": "Versione iniziale",
+                "es": "Versión inicial",
+                "pl": "Pierwsze wydanie",
+                "zh-cn": "首次出版"
+            }
+        },
+        "title": "Firebase",
+        "titleLang": {
+            "en": "Firebase",
+            "de": "Firebase",
+            "ru": "Firebase",
+            "pt": "Firebase",
+            "nl": "Firebase",
+            "fr": "Base de feu",
+            "it": "Firebase",
+            "es": "Base de fuego",
+            "pl": "Baza ogniowa",
+            "zh-cn": "火力地堡"
+        },
+        "desc": {
+            "en": "firebase",
+            "de": "Feuerbasis",
+            "ru": "firebase",
+            "pt": "firebase",
+            "nl": "firebase",
+            "fr": "base de feu",
+            "it": "Firebase",
+            "es": "base de fuego",
+            "pl": "baza ogniowa",
+            "zh-cn": "火力"
+        },
+        "authors": [
+            "bondrogeen <bondrogeen@gmail.com>"
+        ],
+        "keywords": [
+            "ioBroker",
+            "template",
+            "Smart Home",
+            "home automation"
+        ],
+        "license": "MIT",
+        "platform": "Javascript/Node.js",
+        "main": "main.js",
+        "icon": "firebase.png",
+        "enabled": true,
+        "extIcon": "https://raw.githubusercontent.com/bondrogeen/ioBroker.firebase/master/admin/firebase.png",
+        "readme": "https://github.com/bondrogeen/ioBroker.firebase/blob/master/README.md",
+        "loglevel": "info",
+        "mode": "daemon",
+        "type": "communication",
+        "compact": true,
+        "materialize": true,
+        "dependencies": [
+            {
+                "admin": ">=3.0.0"
+            },
+            {
+                "js-controller": ">=1.4.2"
+            }
+        ]
+    },
+    "native": {
+        "option1": true,
+        "option2": "42"
+    },
+    "objects": [],
+    "instanceObjects": [
+        {
+            "_id": "info",
+            "type": "channel",
+            "common": {
+                "name": "Information"
+            },
+            "native": {}
+        },
+        {
+            "_id": "info.connection",
+            "type": "state",
+            "common": {
+                "role": "indicator.connected",
+                "name": "Device or service connected",
+                "type": "boolean",
+                "read": true,
+                "write": false,
+                "def": false
+            },
+            "native": {}
+        }
+    ]
+}
